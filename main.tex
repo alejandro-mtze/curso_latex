@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[spanish,mexico]{babel}
+\usepackage{datetime}
+\usepackage{hyperref}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{booktabs}
+
+%\usepackage[numbers]{natbib}
+%\bibliographystyle{plainnat}
+
+\usepackage[autostyle]{csquotes}
+\usepackage[backend=biber, style=numeric,
+natbib=true,
+doi=true]{biblatex}
+\addbibresource{references.bib}
+
+
+\begin{document}
+	\author{Mario C. López Locés}
+	\title{Introducción a \LaTeX}
+	\date{\formatdate{24}{12}{2099}}
+	\tableofcontents
+	\maketitle
+\input{contenido.tex}
+%\include{}
+\end{document}
