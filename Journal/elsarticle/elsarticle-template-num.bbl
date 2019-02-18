@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+\expandafter\ifx\csname url\endcsname\relax
+  \def\url#1{\texttt{#1}}\fi
+\expandafter\ifx\csname urlprefix\endcsname\relax\def\urlprefix{URL }\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \def\href#1#2{#2} \def\path#1{#1}\fi
+
+\bibitem{turing1937}
+A.~M. Turing,
+  \href{https://londmathsoc.onlinelibrary.wiley.com/doi/abs/10.1112/plms/s2-42.1.230}{On
+  computable numbers, with an application to the entscheidungsproblem},
+  Proceedings of the London Mathematical Society s2-42~(1) (1937) 230--265
+  (1937).
+\newblock \href
+  {http://arxiv.org/abs/https://londmathsoc.onlinelibrary.wiley.com/doi/pdf/10.1112/plms/s2-42.1.230}
+  {\path{arXiv:https://londmathsoc.onlinelibrary.wiley.com/doi/pdf/10.1112/plms/s2-42.1.230}},
+  \href {https://doi.org/10.1112/plms/s2-42.1.230}
+  {\path{doi:10.1112/plms/s2-42.1.230}}.
+\newline\urlprefix\url{https://londmathsoc.onlinelibrary.wiley.com/doi/abs/10.1112/plms/s2-42.1.230}
+
+\bibitem{cook1971}
+S.~A. Cook, \href{http://doi.acm.org/10.1145/800157.805047}{The complexity of
+  theorem-proving procedures}, in: Proceedings of the Third Annual ACM
+  Symposium on Theory of Computing, STOC '71, ACM, New York, NY, USA, 1971, pp.
+  151--158 (1971).
+\newblock \href {https://doi.org/10.1145/800157.805047}
+  {\path{doi:10.1145/800157.805047}}.
+\newline\urlprefix\url{http://doi.acm.org/10.1145/800157.805047}
+
+\bibitem{garey1979}
+M.~R. Garey, D.~S. Johnson, Computers and Intractability: A Guide to the Theory
+  of NP-completeness, WH freeman San Francisco, 1979 (1979).
+
+\end{thebibliography}

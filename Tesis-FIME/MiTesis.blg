@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2018/Arch Linux)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: MiTesis.aux
+A level-1 auxiliary file: Portadas.aux
+A level-1 auxiliary file: Dedicatoria.aux
+A level-1 auxiliary file: Agradecimientos.aux
+A level-1 auxiliary file: Resumen.aux
+A level-1 auxiliary file: Capitulo.aux
+A level-1 auxiliary file: Apendice.aux
+The style file: mighelbib.bst
+A level-1 auxiliary file: Autobiografia.aux
+Database file #1: MiBiblio.bib
+Reallocated wiz_functions (elt_size=8) to 6000 items from 3000.
+Reallocated singl_function (elt_size=8) to 100 items from 50.
+You've used 3 entries,
+            3271 wiz_defined-function locations,
+            668 strings with 5656 characters,
+and the built_in function-call counts, 1697 in all, are:
+= -- 144
+> -- 37
+< -- 2
++ -- 17
+- -- 10
+* -- 93
+:= -- 168
+add.period$ -- 3
+call.type$ -- 3
+change.case$ -- 13
+chr.to.int$ -- 3
+cite$ -- 6
+duplicate$ -- 187
+empty$ -- 144
+format.name$ -- 11
+if$ -- 352
+int.to.chr$ -- 0
+int.to.str$ -- 3
+missing$ -- 31
+newline$ -- 30
+num.names$ -- 6
+pop$ -- 74
+preamble$ -- 1
+purify$ -- 11
+quote$ -- 0
+skip$ -- 81
+stack$ -- 0
+substring$ -- 59
+swap$ -- 136
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 10
+warning$ -- 0
+while$ -- 11
+width$ -- 4
+write$ -- 46

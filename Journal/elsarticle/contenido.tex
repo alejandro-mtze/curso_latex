@@ -1,0 +1,174 @@
+\section{Sección numerada}
+
+\subsection{Subsección}
+
+\subsubsection{Subsubsección}
+
+\paragraph{Párrafo normal} y continúa.
+
+\subparagraph{Subpárrafo} continúa normal.
+
+\section*{Sección no numerada}
+
+\section{Listas}
+\label{ssec:listas}
+
+Para hacer una lista normal:
+
+\begin{itemize}
+	\item Un elemento
+	\item Otro elemento
+	\item Uno más
+\end{itemize}
+
+\begin{enumerate}
+	\item Primer elemento
+	\item Segundo elemento
+	\item Tercer elemento
+\end{enumerate}
+
+\begin{description}
+	\item[Un] elemento
+	\item[Dos] segundo elemento
+\end{description}
+
+\begin{itemize}
+	\item Elemento uno
+	\begin{enumerate}
+		\item uno uno
+		\item uno dos
+		\begin{enumerate}
+			\item con letras
+		\end{enumerate}
+	\end{enumerate}
+	\item Otro elemento
+\end{itemize}
+
+\section{Matemáticas}
+
+Una ecuación inline $a = b^2 + c$ otra forma más latexiana \(a = b^2 + c\)
+
+Una ecuación en modo display \[E = mc^2\] en donde la ecuación aparece independiente.
+
+\begin{equation}
+	E = mc^2 \label{eq:relativo}
+\end{equation}
+
+Como mostrar casos:
+
+\begin{equation}
+	f(x) = 
+	\begin{cases}
+		\frac{x}{2}	& x \geq 1 \\
+		1			& x < 1
+	\end{cases}
+\end{equation}
+
+Modelos matemáticos:
+
+\begin{alignat}{3}
+	\text{Min } & \sum_{i = 1}^{m} \sum_{j = 1}^{n} c_{ij}x_{ij} + y_{i} \\
+	\text{such that:} \nonumber \\
+				& \prod_{i = 1}^{m} \sum_{j = 1}^{n} x_{ij} = n\\ \label{eq:restr2}
+				& \sum_{i = 1}^{m} x_{ij} \geq 0 &\forall i \in N\\
+				&x_{ij} \in \{0,1\}
+\end{alignat}
+
+Detextify (para obtener los comandos en \LaTeX de los símbolos matemáticos): http://detexify.kirelabs.org/classify.html
+
+\section{Imágenes}
+
+\begin{center}
+	\includegraphics[width =0.25\textwidth]{./img/blue.png}
+\end{center}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width =0.25\textwidth]{./img/green.png}
+	\caption{Un cuadro verde.}
+\end{figure}
+
+Para crear subfiguras:
+
+\begin{figure}[H]
+	\centering
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\textwidth]{./img/blue.png}
+		\caption{Azul}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\textwidth]{./img/green.png}
+		\caption{Verde}
+	\end{subfigure}
+	\begin{subfigure}{0.3\textwidth}
+		\includegraphics[width=\textwidth]{./img/orange.jpg}
+		\caption{Naranja}
+	\end{subfigure}
+	\caption{Una figura con subfiguras.}
+	\label{fig:colores}
+\end{figure}
+
+\section{Tablas}
+
+Tabla común
+
+\begin{tabular}{|l|c|rr|}
+	\hline
+	A & B & C & D\\
+	\hline
+	1 & 3 & 4 & 5\\
+	6 & 7 & 8 & 9\\
+	\hline
+\end{tabular}
+
+Generador de tablas: http://www.tablesgenerator.com/
+
+Tabla con booktabs:
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{llr}
+		\toprule
+		\multicolumn{2}{c}{Item} &            \\ \midrule
+		Animal     & Description & Price (\$) \\ \midrule
+		Gnat       & per gram    & 13.65      \\
+		& each        & 0.01       \\
+		Gnu        & stuffed     & 92.50      \\
+		Emu        & stuffed     & 33.33      \\
+		Armadillo  & frozen      & 8.99       \\ \bottomrule
+	\end{tabular}
+	\caption{Tabla bonita}
+	\label{tab:tabbonita}
+\end{table}
+
+\section{Referencias}
+
+Para hacer referencia a Ecuaciones (eq:), Figuras (fig:), Tablas (tab:), Secciones (sec:), etc.
+
+Para hacer referencia a la ecuación \ref{eq:relativo} en la página \pageref{eq:relativo}. O una referencia a una subsección \ref{ssec:listas}.
+
+\section{Bibliografía}
+
+Aquí comenzó todo \citep{turing1937}. Una referencia a otro artículo de \citet{cook1971}.
+
+Una referencia en espanglish \citet{garey1979}.
+
+%%\bibliography{references.bib}
+
+\begin{verbatim}
+
+$ pdflatex main.tex
+$ biber main
+$ pdflatex main.tex
+$ pdflatex main.tex
+\end{verbatim}
+
+%\printbibliography
+
+\section{Ayuda}
+
+\begin{verbatim}
+$ texdoc paquete
+\end{verbatim}
+
+En la página oficial de CTAN: https://ctan.org/

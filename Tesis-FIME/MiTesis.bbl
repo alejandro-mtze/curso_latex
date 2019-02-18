@@ -1,0 +1,36 @@
+\begin{thebibliography}{1}
+\ProvideTextCommand{\guillemotleft}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\ll$}}
+\ProvideTextCommand{\guillemotright}{OT1}{%
+  \leavevmode\raise .27ex\hbox{$\scriptscriptstyle\gg$}}
+\newcommand{\enquote}[1]{\guillemotleft#1\guillemotright}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\selectlanguage}[1]{\relax}
+\providecommand{\bibAnnoteFile}[1]{%
+  \IfFileExists{#1}{\begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ \input{#1}\end{quotation}}{}}
+\providecommand{\bibAnnote}[2]{%
+  \begin{quotation}\noindent\textsc{Key:} #1\\
+  \textsc{Annotation:}\ #2\end{quotation}}
+\providecommand{\eprint}[2][]{\url{#2}}
+
+\bibitem{Baz04}
+\textsc{Bazaraa, M.~S.}, \textsc{J.~J. Jarvis} y \textsc{H.~D. Sherali},
+  \textit{Programaci\'on lineal y flujo en redes}, segunda edici\'on, Limusa,
+  M\'exico, DF, 2004.
+\bibAnnoteFile{Baz04}
+
+\bibitem{Dan82}
+\textsc{Dantzig, G.~B.}, \enquote{Reminiscences about the origins of linear
+  programming}, \textit{Operations Research Letters}, \textbf{1}(2), p\'ags.
+  43--48, 1982.
+\bibAnnoteFile{Dan82}
+
+\bibitem{Mat11}
+\textsc{Mata, M.}, \enquote{Bibliograf\'{\i}a en \LaTeX: Una gu\'{\i}a concisa
+  de \textsc{Bib}\TeX}, (versi\'on 0.3), recurso libre, disponible en
+  http://logistica.fime.uanl.mx/miguel/docs/BibTeX.pdf, 2011.
+\bibAnnoteFile{Mat11}
+
+\end{thebibliography}
